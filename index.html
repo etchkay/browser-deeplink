@@ -13,9 +13,14 @@
 					launchiOSApp('iOSVouch365://?userID=123');
 				}
 		}
+		$(document).ready(function() {
+			launchApp();
+		});
     </script>
 </head>
 <body>
-    <a id="my-link" onclick="launchApp();" href="#">open myapp</a>
+	<p>
+		Redirecting to App or Store URL, jquery is not integrated here so have to click <a id="my-link" onclick="launchApp();" href="#">Redirect</a>.
+	</p>
 </body>
 </html>
