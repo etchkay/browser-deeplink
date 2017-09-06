@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <script src="browser-deeplink.js" type="text/javascript"></script>
+    <script type="text/javascript">
+		function launchApp() {
+				var iOS = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
+				if(!iOS) {
+					launchAndroidApp2('http://vouch365.com/invite/from/123'); 
+				}
+				else {
+					launchiOSApp('iOSVouch365://?userID=123');
+				}
+		}
+    </script>
+</head>
+<body>
+    <a id="my-link" onclick="launchApp();" href="#">open myapp</a>
+</body>
+</html>
